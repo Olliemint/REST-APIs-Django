@@ -7,6 +7,7 @@ class Moviedata(models.Model):
     duration = models.FloatField()
     ratings = models.FloatField()
     movietype = models.CharField(max_length=200,default='action')
+    image = models.ImageField(default='movie.jpg',upload_to='moviepics')
     
     def __str__(self):
         
